@@ -11,6 +11,7 @@ yargs
     .recommendCommands()
     .strict()
     .command(require("./commands/create"))
+    .command(require("./commands/package-lambda"))
     .command(require("./commands/entity"))
     .help("h")
     .alias("h", "help")

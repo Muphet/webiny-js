@@ -29,14 +29,6 @@ export default {
                 regenerator: true
             }
         ],
-        ["babel-plugin-transform-builtin-extend", { globals: ["Error"] }],
-        // This plugin is required to force all css/scss imports to have a resourceQuery
-        [
-            "babel-plugin-transform-rename-import",
-            {
-                original: "^(.*?.s?css)$",
-                replacement: "$1?"
-            }
-        ]
+        ["babel-plugin-transform-builtin-extend", { globals: ["Error"] }]
     ])
 };

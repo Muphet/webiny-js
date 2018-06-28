@@ -2,12 +2,13 @@
   "presets": [
     ["babel-preset-env", {
       "targets": {
-        "node": "6.10"
+        "node": "8.10"
       }
     }],
     "babel-preset-flow"
   ],
   "plugins": [
+    ["babel-plugin-lodash"],
     ["babel-plugin-transform-object-rest-spread", {"useBuiltIns": true}],
     ["babel-plugin-transform-builtin-extend", {"globals": ["Error"]}],
     ["babel-plugin-transform-runtime"],

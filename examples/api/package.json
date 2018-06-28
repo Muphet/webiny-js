@@ -8,8 +8,9 @@
     "build:watch": "babel src -d dist --watch",
     "develop": "cross-env NODE_ENV=development sls offline start --port 9000",
     "develop:debug": "cross-env NODE_ENV=development DEBUG=webiny* node --inspect=9005 api/src/express --port 9000",
-    "clean":  "rimraf node_modules/graphql* node_modules/webiny-* node_modules/mysql",
-    "postinstall": "yarn clean"
+    "clean": "rimraf node_modules/graphql* node_modules/webiny-* node_modules/mysql",
+    "postinstall": "yarn clean",
+    "lambda": "node ../../packages/webiny-cli package-lambda ."
   },
   "author": "",
   "license": "MIT",
@@ -49,6 +50,10 @@
     "rimraf": "^2.6.2",
     "serverless": "^1.27.2",
     "serverless-offline": "^3.20.3",
-    "serverless-static": "^1.0.0"
+    "serverless-static": "^1.0.0",
+    "source-map-explorer": "^1.5.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-node-externals": "^1.7.2"
   }
 }
